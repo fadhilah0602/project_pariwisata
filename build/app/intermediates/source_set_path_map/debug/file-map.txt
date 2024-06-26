@@ -1,0 +1,12 @@
+com.example.project_pariwisata.app-jetified-window-java-1.0.0-beta04-0 C:\Users\mutia\.gradle\caches\transforms-3\5832976848a77a6ef79cca2eb67aa027\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.project_pariwisata.app-core-1.6.0-1 C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\res
+com.example.project_pariwisata.app-jetified-annotation-experimental-1.1.0-2 C:\Users\mutia\.gradle\caches\transforms-3\cd4ef72d5fbfbd3f212d93db31086ba2\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.project_pariwisata.app-jetified-window-1.0.0-beta04-3 C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\res
+com.example.project_pariwisata.app-debug-4 D:\Programming\android\Java\project_pariwisata\android\app\src\debug\res
+com.example.project_pariwisata.app-main-5 D:\Programming\android\Java\project_pariwisata\android\app\src\main\res
+com.example.project_pariwisata.app-pngs-6 D:\Programming\android\Java\project_pariwisata\build\app\generated\res\pngs\debug
+com.example.project_pariwisata.app-resValues-7 D:\Programming\android\Java\project_pariwisata\build\app\generated\res\resValues\debug
+com.example.project_pariwisata.app-rs-8 D:\Programming\android\Java\project_pariwisata\build\app\generated\res\rs\debug
+com.example.project_pariwisata.app-mergeDebugResources-9 D:\Programming\android\Java\project_pariwisata\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.project_pariwisata.app-mergeDebugResources-10 D:\Programming\android\Java\project_pariwisata\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.project_pariwisata.app-merged_res-11 D:\Programming\android\Java\project_pariwisata\build\app\intermediates\merged_res\debug

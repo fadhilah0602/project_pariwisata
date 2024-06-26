@@ -1,0 +1,127 @@
+-- Merging decision tree log ---
+application
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:2:5-32:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\mutia\.gradle\caches\transforms-3\ab2f7e585d763da5ddb73b715b707b91\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\mutia\.gradle\caches\transforms-3\ab2f7e585d763da5ddb73b715b707b91\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+manifest
+ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\5832976848a77a6ef79cca2eb67aa027\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mutia\.gradle\caches\transforms-3\c4f3667c2ec620461de8462c6d7d3dbc\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\2cc6ec8be08e34bdfda1284856bd24c0\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\325b569f6d948eaf75e250a85968f358\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\fa80d715d7fee227692772c54aef4e4b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\48df6371b856b7343cd7ecdc021cc5b7\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\mutia\.gradle\caches\transforms-3\5891556f8d5a1278282fd35924442d6d\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\1e177834b37a09d7b403729f2328325e\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\a7d46a2112556b0070f8d739f3cad171\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\6e267f31d4aca8d59a40337a8e23810c\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\0884842725168e31f0d9aa869443200e\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\120bcb48b94023b9860926aa038e467f\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\mutia\.gradle\caches\transforms-3\ab2f7e585d763da5ddb73b715b707b91\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\mutia\.gradle\caches\transforms-3\c522d6dfc6fd97cdb253df0809406590\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\mutia\.gradle\caches\transforms-3\cd4ef72d5fbfbd3f212d93db31086ba2\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:1:11-69
+queries
+ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:38:5-43:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:39:9-42:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:40:13-72
+	android:name
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:40:21-70
+data
+ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:41:13-50
+	android:mimeType
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml:41:19-48
+uses-sdk
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\5832976848a77a6ef79cca2eb67aa027\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\5832976848a77a6ef79cca2eb67aa027\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mutia\.gradle\caches\transforms-3\c4f3667c2ec620461de8462c6d7d3dbc\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\mutia\.gradle\caches\transforms-3\c4f3667c2ec620461de8462c6d7d3dbc\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\2cc6ec8be08e34bdfda1284856bd24c0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\2cc6ec8be08e34bdfda1284856bd24c0\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\325b569f6d948eaf75e250a85968f358\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\325b569f6d948eaf75e250a85968f358\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\fa80d715d7fee227692772c54aef4e4b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\fa80d715d7fee227692772c54aef4e4b\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\48df6371b856b7343cd7ecdc021cc5b7\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\48df6371b856b7343cd7ecdc021cc5b7\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\mutia\.gradle\caches\transforms-3\8c5f05e8c31de992d25da28e922c6087\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\mutia\.gradle\caches\transforms-3\5891556f8d5a1278282fd35924442d6d\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\mutia\.gradle\caches\transforms-3\5891556f8d5a1278282fd35924442d6d\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\1e177834b37a09d7b403729f2328325e\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\1e177834b37a09d7b403729f2328325e\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\a7d46a2112556b0070f8d739f3cad171\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\a7d46a2112556b0070f8d739f3cad171\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\6e267f31d4aca8d59a40337a8e23810c\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\6e267f31d4aca8d59a40337a8e23810c\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\0884842725168e31f0d9aa869443200e\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\mutia\.gradle\caches\transforms-3\0884842725168e31f0d9aa869443200e\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\120bcb48b94023b9860926aa038e467f\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\mutia\.gradle\caches\transforms-3\120bcb48b94023b9860926aa038e467f\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\mutia\.gradle\caches\transforms-3\ab2f7e585d763da5ddb73b715b707b91\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\mutia\.gradle\caches\transforms-3\ab2f7e585d763da5ddb73b715b707b91\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\mutia\.gradle\caches\transforms-3\c522d6dfc6fd97cdb253df0809406590\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\mutia\.gradle\caches\transforms-3\c522d6dfc6fd97cdb253df0809406590\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\mutia\.gradle\caches\transforms-3\cd4ef72d5fbfbd3f212d93db31086ba2\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\mutia\.gradle\caches\transforms-3\cd4ef72d5fbfbd3f212d93db31086ba2\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from D:\Programming\android\Java\project_pariwisata\android\app\src\debug\AndroidManifest.xml:6:22-64
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\mutia\.gradle\caches\transforms-3\d5d0304a877041763b5bf7bc265ffd32\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51

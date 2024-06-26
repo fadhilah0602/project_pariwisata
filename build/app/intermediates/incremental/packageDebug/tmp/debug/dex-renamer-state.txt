@@ -1,0 +1,4 @@
+#Wed Jun 26 20:50:02 WIB 2024
+base.0=D\:\\Programming\\android\\Java\\project_pariwisata\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

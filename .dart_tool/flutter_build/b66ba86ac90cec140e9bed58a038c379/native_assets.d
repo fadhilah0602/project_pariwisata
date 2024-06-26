@@ -1,0 +1,1 @@
+ D:\\Programming\\android\\Java\\project_pariwisata\\.dart_tool\\flutter_build\\b66ba86ac90cec140e9bed58a038c379\\native_assets.yaml: 
