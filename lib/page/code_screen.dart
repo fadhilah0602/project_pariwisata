@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_pariwisata/page/reset_password.dart';
+import 'package:project_pariwisata_new/page/reset_password.dart';
 
 class CodeScreen extends StatefulWidget {
   @override

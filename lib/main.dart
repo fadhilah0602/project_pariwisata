@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:project_pariwisata/page/splashscreen.dart';
+import 'package:project_pariwisata_new/page/login.dart';
+
+import 'page/splashscreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const LoginScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

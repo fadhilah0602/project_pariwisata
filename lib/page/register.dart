@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../model/model_register.dart';
 import 'login.dart';
-// import 'model/model_register.dart';
-// import 'package:http/http.dart' as http;
+import 'package:http/http.dart' as http;
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
@@ -26,61 +26,61 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   bool isLoading = false;
 
-  // Future<ModelRegister?> registerAccount() async {
-  //   try {
-  //     setState(() {
-  //       isLoading = true;
-  //     });
-  //     http.Response res = await http.post(
-  //       Uri.parse('http://192.168.1.12/kelompok4/register.php'),
-  //       body: {
-  //         "username": txtUsername.text,
-  //         "fullname": txtFullname.text,
-  //         "no_hp": txtNoHp.text,
-  //         "alamat": txtAlamat.text,
-  //         "password": txtPassword.text,
-  //         "jenis_kelamin": _jenisKelaminValue,
-  //         "email": txtEmail.text,
-  //       },
-  //     );
-  //
-  //     ModelRegister data = modelRegisterFromJson(res.body);
-  //     //cek kondisi respon
-  //     if (data.value == 1) {
-  //       setState(() {
-  //         isLoading = false;
-  //         ScaffoldMessenger.of(context).showSnackBar(
-  //           SnackBar(content: Text('${data.message}')),
-  //         );
-  //         //kondisi berhasil dan pindah ke page login
-  //         Navigator.pushAndRemoveUntil(
-  //           context,
-  //           MaterialPageRoute(builder: (context) => LoginScreen()),
-  //               (route) => false,
-  //         );
-  //       });
-  //       //kondisi email sudah ada
-  //     } else if (data.value == 2) {
-  //       setState(() {
-  //         isLoading = false;
-  //         ScaffoldMessenger.of(context).showSnackBar(
-  //           SnackBar(content: Text('${data.message}')),
-  //         );
-  //       });
-  //       //kondisi gagal daftar
-  //     } else {
-  //       isLoading = false;
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('${data.message}')),
-  //       );
-  //     }
-  //   } catch (e) {
-  //     isLoading = false;
-  //     ScaffoldMessenger.of(context).showSnackBar(
-  //       SnackBar(content: Text(e.toString())),
-  //     );
-  //   }
-  // }
+  Future<ModelRegister?> registerAccount() async {
+    try {
+      setState(() {
+        isLoading = true;
+      });
+      http.Response res = await http.post(
+        Uri.parse('http://192.168.1.109/pariwisata/register.php'),
+        body: {
+          "username": txtUsername.text,
+          "fullname": txtFullname.text,
+          "no_hp": txtNoHp.text,
+          "alamat": txtAlamat.text,
+          "password": txtPassword.text,
+          "jenis_kelamin": _jenisKelaminValue,
+          "email": txtEmail.text,
+        },
+      );
+
+      ModelRegister data = modelRegisterFromJson(res.body);
+      //cek kondisi respon
+      if (data.value == 1) {
+        setState(() {
+          isLoading = false;
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('${data.message}')),
+          );
+          //kondisi berhasil dan pindah ke page login
+          Navigator.pushAndRemoveUntil(
+            context,
+            MaterialPageRoute(builder: (context) => LoginScreen()),
+                (route) => false,
+          );
+        });
+        //kondisi email sudah ada
+      } else if (data.value == 2) {
+        setState(() {
+          isLoading = false;
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('${data.message}')),
+          );
+        });
+        //kondisi gagal daftar
+      } else {
+        isLoading = false;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('${data.message}')),
+        );
+      }
+    } catch (e) {
+      isLoading = false;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(e.toString())),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -311,7 +311,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                     _jenisKelaminValue = newValue!;
                                   });
                                 },
-                                items: <String>['L', 'P']
+                                items: <String>['Laki-Laki', 'Perempuan']
                                     .map<DropdownMenuItem<String>>((String value) {
                                   return DropdownMenuItem<String>(
                                     value: value,
@@ -370,10 +370,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   ),
                                 ),
                                 onPressed: () {
-                                  // if (keyForm.currentState?.validate() ==
-                                  //     true) {
-                                  //   registerAccount();
-                                  // }
+                                  if (keyForm.currentState?.validate() ==
+                                      true) {
+                                    registerAccount();
+                                  }
                                 },
                                 child: Text(
                                   'Sign Up',

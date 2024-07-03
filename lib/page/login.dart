@@ -1,18 +1,14 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:project_pariwisata/page/register.dart';
+import 'package:project_pariwisata_new/page/register.dart';
 
+import '../model/model_login.dart';
+import '../util/session_manager.dart';
 import 'forgot_password.dart';
-// import 'package:http/http.dart' as http;
-// import 'package:project_ecommerce/coba.dart';
-// import 'package:project_ecommerce/forgot_password.dart';
-// import 'package:project_ecommerce/home_page.dart';
-// import 'package:project_ecommerce/register.dart';
-// import 'package:project_ecommerce/utils/session_manager.dart';
-//
-// import 'model/model_login.dart';
-// import 'model/model_user.dart';
-// import 'navigation_page.dart';
+import 'package:http/http.dart' as http;
+
+import 'home_page.dart';
+import 'navigation_page.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -31,136 +27,81 @@ class _LoginScreenState extends State<LoginScreen> {
 
   bool isLoading = false;
 
-  // get pageController => null;
+  get pageController => null;
 
-  // Future<ModelLogin?> loginAccount() async {
-  //   try {
-  //     setState(() {
-  //       isLoading = true;
-  //     });
-  //     http.Response res = await http.post(
-  //       Uri.parse('http://192.168.1.12/kelompok4/login.php'),
-  //       body: {
-  //         "username": txtUsername.text,
-  //         "password": txtPassword.text,
-  //       },
-  //     );
-  //
-  //     ModelLogin data = modelLoginFromJson(res.body);
-  //     //cek kondisi respon
-  //     if (data.value == 1) {
-  //       setState(() {
-  //         isLoading = false;
-  //         ScaffoldMessenger.of(context).showSnackBar(
-  //           SnackBar(content: Text('${data.message}')),
-  //         );
-  //         //kondisi berhasil dan pindah ke page login
-  //         Navigator.pushAndRemoveUntil(
-  //           context,
-  //           MaterialPageRoute(builder: (context) => HomePage()),
-  //               (route) => false,
-  //         );
-  //       });
-  //       //kondisi email sudah ada
-  //     } else if (data.value == 2) {
-  //       setState(() {
-  //         isLoading = false;
-  //         ScaffoldMessenger.of(context).showSnackBar(
-  //           SnackBar(content: Text('${data.message}')),
-  //         );
-  //       });
-  //       //kondisi gagal daftar
-  //     } else {
-  //       isLoading = false;
-  //       ScaffoldMessenger.of(context).showSnackBar(
-  //         SnackBar(content: Text('${data.message}')),
-  //       );
-  //     }
-  //   } catch (e) {
-  //     isLoading = false;
-  //     ScaffoldMessenger.of(context).showSnackBar(
-  //       SnackBar(content: Text(e.toString())),
-  //     );
-  //   }
-  // }
+  Future<void> loginAccount() async {
+    try {
+      setState(() {
+        isLoading = true;
+      });
 
-  // Future<void> loginAccount() async {
-  //   try {
-  //     setState(() {
-  //       isLoading = true;
-  //     });
-  //
-  //     http.Response res = await http.post(
-  //       Uri.parse('http://192.168.1.12/kelompok4/login.php'),
-  //       body: {
-  //         "login": "1",
-  //         "email": txtEmail.text,
-  //         "password": txtPassword.text,
-  //       },
-  //     );
-  //
-  //     if (res.statusCode == 200) {
-  //       ModelLogin data = ModelLogin.fromJson(json.decode(res.body));
-  //       if (data.sukses) {
-  //         if (data.data != null &&
-  //             data.data.id_user != null &&
-  //             data.data.username != null &&
-  //             data.data.fullname != null &&
-  //             data.data.jenis_kelamin != null &&
-  //             data.data.no_hp != null &&
-  //             data.data.alamat != null &&
-  //             data.data.email != null &&
-  //             data.data.created != null &&
-  //             data.data.updated != null &&
-  //             data.data.role != null) {
-  //           sessionManager.saveSession(
-  //             data.status,
-  //             data.data.id_user,
-  //             data.data.username,
-  //             data.data.fullname,
-  //             data.data.jenis_kelamin,
-  //             data.data.no_hp,
-  //             data.data.alamat,
-  //             data.data.email,
-  //             data.data.role,
-  //             data.data.created,
-  //             data.data.updated,
-  //           );
-  //
-  //           print('Nilai sesi disimpan:');
-  //           print('ID user: ${data.data.id_user}');
-  //           print('Username: ${data.data.username}');
-  //           print('Email: ${data.data.email}');
-  //
-  //           ScaffoldMessenger.of(context)
-  //               .showSnackBar(SnackBar(content: Text('${data.pesan}')));
-  //           // Navigator.pushReplacement(
-  //           //   context,
-  //           //   MaterialPageRoute(builder: (context) => PageMulai(pageController: pageController)),
-  //           // );
-  //           // Navigator.pushReplacement(
-  //           //   context,
-  //           //   MaterialPageRoute(builder: (context) => NavigationPage()),
-  //           // );
-  //         } else {
-  //           throw Exception('Data pengguna tidak lengkap atau null');
-  //         }
-  //       } else {
-  //         ScaffoldMessenger.of(context)
-  //             .showSnackBar(SnackBar(content: Text('${data.pesan}')));
-  //       }
-  //     } else {
-  //       throw Exception('Failed to load data');
-  //     }
-  //   } catch (e) {
-  //     ScaffoldMessenger.of(context)
-  //         .showSnackBar(SnackBar(content: Text(e.toString())));
-  //   } finally {
-  //     setState(() {
-  //       isLoading = false;
-  //     });
-  //   }
-  // }
+      http.Response res = await http.post(
+        Uri.parse('http://192.168.1.109/pariwisata/login.php'),
+        body: {
+          "login": "1",
+          "email": txtEmail.text,
+          "password": txtPassword.text,
+        },
+      );
+
+      if (res.statusCode == 200) {
+        ModelLogin data = ModelLogin.fromJson(json.decode(res.body));
+        if (data.sukses) {
+          if (data.data != null &&
+              data.data.id_user != null &&
+              data.data.username != null &&
+              data.data.fullname != null &&
+              data.data.jenis_kelamin != null &&
+              data.data.no_hp != null &&
+              data.data.alamat != null &&
+              data.data.email != null &&
+              data.data.role != null) {
+            sessionManager.saveSession(
+              data.status,
+              data.data.id_user,
+              data.data.username,
+              data.data.fullname,
+              data.data.jenis_kelamin,
+              data.data.no_hp,
+              data.data.alamat,
+              data.data.email,
+              data.data.role,
+            );
+
+            print('Nilai sesi disimpan:');
+            print('ID user: ${data.data.id_user}');
+            print('Username: ${data.data.username}');
+            print('Email: ${data.data.email}');
+
+            ScaffoldMessenger.of(context)
+                .showSnackBar(SnackBar(content: Text('${data.pesan}')));
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => PageMulai(pageController: pageController)),
+            );
+            Navigator.pushReplacement(
+              context,
+              MaterialPageRoute(builder: (context) => NavigationPage()),
+            );
+          } else {
+            throw Exception('Data pengguna tidak lengkap atau null');
+          }
+        } else {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text('${data.pesan}')));
+        }
+      } else {
+        throw Exception('Failed to load data');
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(e.toString())));
+    } finally {
+      setState(() {
+        isLoading = false;
+      });
+    }
+  }
 
   // @override
   // void initState() {
@@ -285,9 +226,9 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                             onPressed: () {
-                              // if (keyForm.currentState?.validate() == true) {
-                              //   loginAccount();
-                              // }
+                              if (keyForm.currentState?.validate() == true) {
+                                loginAccount();
+                              }
                             },
                             child: isLoading
                                 ? CircularProgressIndicator(
